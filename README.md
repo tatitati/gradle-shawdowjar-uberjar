@@ -61,7 +61,7 @@ You will get:
 ```
  ./gradlew publish
 ```
-You will get this:
+You will get this publication. where *-all contains also all the dependencies 
 ```
 /build
 ├── localrepository
@@ -72,10 +72,14 @@ You will get this:
 │               ├── maven-metadata.xml.md5
 │               ├── maven-metadata.xml.sha1
 │               └── unspecified
+│                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified-all.jar
+│                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified-all.jar.md5
+│                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified-all.jar.sha1
 │                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.jar
 │                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.jar.md5
 │                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.jar.sha1
 │                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.pom
 │                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.pom.md5
 │                   └── gradle-shadow-jar-with-kotlin-dsl-unspecified.pom.sha1
+
 ```

@@ -31,13 +31,6 @@ tasks {
     }
 }
 
-val somedebug by tasks.registering{
-    doLast {
-        println("im here")
-    }
-}
-
-
 tasks.register<Jar>("uberJar") {
     archiveClassifier.set("uber")
 
@@ -57,6 +50,7 @@ publishing {
     publications {
         create<MavenPublication>("default") {
             from(components["java"])
+            artifact(tasks["shadowJar"])
         }
     }
 
@@ -70,9 +64,5 @@ publishing {
 tasks {
     build {
         dependsOn(shadowJar)
-    }
-
-    shadowJar {
-        dependsOn(somedebug)
     }
 }
