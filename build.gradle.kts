@@ -25,9 +25,6 @@ tasks {
     named<ShadowJar>("shadowJar") {
         archiveBaseName.set("shadow")
         mergeServiceFiles()
-        manifest {
-            attributes(mapOf("Main-Class" to "com.github.csolem.gradle.shadow.kotlin.example.App"))
-        }
     }
 }
 
