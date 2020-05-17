@@ -49,8 +49,8 @@ tasks.register<Jar>("uberJar") {
 publishing {
     publications {
         create<MavenPublication>("default") {
-            from(components["java"])
-            artifact(tasks["shadowJar"])
+//            from(components["java"]) // this publishes  myapp.jar
+            artifact(tasks["shadowJar"]) // this publishes myapp-all.jar
         }
     }
 
