@@ -63,23 +63,18 @@ You will get:
 ```
 You will get this publication. where *-all contains also all the dependencies 
 ```
-/build
-├── localrepository
-│   └── com
-│       └── mygroup
-│           └── gradle-shadow-jar-with-kotlin-dsl
-│               ├── maven-metadata.xml
-│               ├── maven-metadata.xml.md5
-│               ├── maven-metadata.xml.sha1
-│               └── unspecified
-│                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified-all.jar
-│                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified-all.jar.md5
-│                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified-all.jar.sha1
-│                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.jar
-│                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.jar.md5
-│                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.jar.sha1
-│                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.pom
-│                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.pom.md5
-│                   └── gradle-shadow-jar-with-kotlin-dsl-unspecified.pom.sha1
-
+/build/localrepository/
+└── com
+    └── mygroup
+        └── gradle-shadow-jar-with-kotlin-dsl
+            ├── maven-metadata.xml
+            ├── maven-metadata.xml.md5
+            ├── maven-metadata.xml.sha1
+            └── unspecified
+                ├── gradle-shadow-jar-with-kotlin-dsl-unspecified-all.jar
+                ├── gradle-shadow-jar-with-kotlin-dsl-unspecified-all.jar.md5
+                ├── gradle-shadow-jar-with-kotlin-dsl-unspecified-all.jar.sha1
+                ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.pom
+                ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.pom.md5
+                └── gradle-shadow-jar-with-kotlin-dsl-unspecified.pom.sha1
 ```
