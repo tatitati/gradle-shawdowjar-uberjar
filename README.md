@@ -1,5 +1,5 @@
 
-Run experiments:
+# Can I build a fat-jar?
 ```
 ./gradlew shadowJar
 ./gradlew uberJar
@@ -26,7 +26,7 @@ where any of these files is like:
 
 ```
 ---
-Another cool task:
+# Can I see the dependencies of a task and the order in which they will run?:
 ```
 gradle build taskTree
 ```
@@ -57,7 +57,7 @@ You will get:
 ```
 ---
 
-Another cool task:
+# Can I publish in a local repository my artifact?:
 ```
  ./gradlew publish
 ```
