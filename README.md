@@ -55,3 +55,27 @@ You will get:
      |    \--- :processResources
      \--- :somedebug
 ```
+---
+
+Another cool task:
+```
+ ./gradlew publish
+```
+You will get this:
+```
+/build
+├── localrepository
+│   └── com
+│       └── mygroup
+│           └── gradle-shadow-jar-with-kotlin-dsl
+│               ├── maven-metadata.xml
+│               ├── maven-metadata.xml.md5
+│               ├── maven-metadata.xml.sha1
+│               └── unspecified
+│                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.jar
+│                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.jar.md5
+│                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.jar.sha1
+│                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.pom
+│                   ├── gradle-shadow-jar-with-kotlin-dsl-unspecified.pom.md5
+│                   └── gradle-shadow-jar-with-kotlin-dsl-unspecified.pom.sha1
+```

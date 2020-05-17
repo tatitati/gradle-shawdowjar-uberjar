@@ -7,6 +7,8 @@ plugins {
     id("maven-publish")
 }
 
+group = "com.mygroup"
+
 repositories {
     mavenCentral()
     jcenter()
