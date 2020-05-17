@@ -4,10 +4,13 @@ plugins {
     java
     id("com.github.johnrengelman.shadow") version "4.0.4"
     id("com.dorongold.task-tree") version "1.5"
+    id("maven-publish")
 }
 
 repositories {
+    mavenCentral()
     jcenter()
+    maven( "https://plugins.gradle.org/m2/")
 }
 
 dependencies {
@@ -46,6 +49,20 @@ tasks.register<Jar>("uberJar") {
                 .filter { it.name.endsWith("jar") }
                 .map { zipTree(it) }
     })
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("default") {
+            from(components["java"])
+        }
+    }
+
+    repositories {
+        maven {
+            url = uri("$buildDir/localrepository")
+        }
+    }
 }
 
 tasks {

@@ -25,3 +25,33 @@ where any of these files is like:
 /META-INF
 
 ```
+---
+Another cool task:
+```
+gradle build taskTree
+```
+You will get:
+```
+:build
++--- :assemble
+|    \--- :jar
+|         \--- :classes
+|              +--- :compileJava
+|              \--- :processResources
++--- :check
+|    \--- :test
+|         +--- :classes
+|         |    +--- :compileJava
+|         |    \--- :processResources
+|         \--- :testClasses
+|              +--- :compileTestJava
+|              |    \--- :classes
+|              |         +--- :compileJava
+|              |         \--- :processResources
+|              \--- :processTestResources
+\--- :shadowJar
+     +--- :classes
+     |    +--- :compileJava
+     |    \--- :processResources
+     \--- :somedebug
+```
